@@ -74,7 +74,7 @@ public class Tests {
             sb.append(",");
 
             // 9. BFS
-            int gSize = Math.min(N, 2000); // Обмежуємо розмір графа
+            int gSize = Math.min(N, 2000); 
             int[][] graph = new int[gSize][gSize];
             for (int i = 0; i < gSize - 1; i++) graph[i][i+1] = 1;
             start = System.nanoTime();
@@ -90,7 +90,6 @@ public class Tests {
             Algorithms.hasCycle(head);
             sb.append(System.nanoTime() - start);
 
-            // Виводимо рядок результатів
             System.out.println(sb.toString());
         }
     }
